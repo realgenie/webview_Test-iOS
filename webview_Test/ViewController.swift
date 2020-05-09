@@ -7,12 +7,20 @@
 //
 
 import UIKit
+import WebKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet var myWebView: WKWebView!
+    
+    func loadWebPage(_ url: String) {
+        let myUrl = URL(string: url)
+        let myRequest = URLRequest(url: myUrl!)
+        myWebView.load(myRequest)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        loadWebPage("http://localhost:8090/reservation/")
     }
 
 
