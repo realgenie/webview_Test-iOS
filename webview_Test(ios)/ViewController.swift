@@ -20,7 +20,7 @@ class ViewController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        loadWebPage("http://localhost:8090/#")
+        loadWebPage("http://localhost:8090/")
     }
 
 
