@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <wkWebView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Oc5-Te-Kgl">
-                                <rect key="frame" x="-2" y="44" width="379" height="710"/>
+                                <rect key="frame" x="-2" y="44" width="379" height="692"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <wkWebViewConfiguration key="configuration">
@@ -25,9 +25,9 @@
                                 </wkWebViewConfiguration>
                             </wkWebView>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0FT-Rl-uHr">
-                                <rect key="frame" x="-2" y="754" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="734" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" systemColor="systemGroupedBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <items>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="XQx-Q3-2yk"/>
                                     <barButtonItem title="Item" systemItem="stop" id="x7H-S8-e17">
@@ -42,7 +42,7 @@
                                         </connections>
                                     </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="jhc-j8-02B"/>
-                                    <barButtonItem title="&lt;-" image="arrow.left" catalog="system" id="vYC-My-342">
+                                    <barButtonItem title="Item" image="arrow.left" catalog="system" id="vYC-My-342">
                                         <connections>
                                             <action selector="btnGoBack:" destination="BYZ-38-t0r" id="hqE-iA-pFp"/>
                                         </connections>

@@ -18,7 +18,7 @@
 
 /* Begin PBXFileReference section */
 		79A24CF024863573001082B7 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
-		79BB0CDE2467046900C73A1D /* webview_Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = webview_Test.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		79BB0CDE2467046900C73A1D /* babjip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = babjip.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		79BB0CE12467046900C73A1D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		79BB0CE32467046900C73A1D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		79BB0CE52467046900C73A1D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -51,7 +51,7 @@
 		79BB0CD52467046900C73A1D = {
 			isa = PBXGroup;
 			children = (
-				79BB0CE02467046900C73A1D /* webview_Test */,
+				79BB0CE02467046900C73A1D /* babjip */,
 				79BB0CDF2467046900C73A1D /* Products */,
 				79A24CEF24863573001082B7 /* Frameworks */,
 			);
@@ -60,12 +60,12 @@
 		79BB0CDF2467046900C73A1D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				79BB0CDE2467046900C73A1D /* webview_Test.app */,
+				79BB0CDE2467046900C73A1D /* babjip.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		79BB0CE02467046900C73A1D /* webview_Test */ = {
+		79BB0CE02467046900C73A1D /* babjip */ = {
 			isa = PBXGroup;
 			children = (
 				79BB0CE12467046900C73A1D /* AppDelegate.swift */,
@@ -76,15 +76,15 @@
 				79BB0CEC2467046C00C73A1D /* LaunchScreen.storyboard */,
 				79BB0CEF2467046C00C73A1D /* Info.plist */,
 			);
-			path = webview_Test;
+			path = babjip;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		79BB0CDD2467046900C73A1D /* webview_Test */ = {
+		79BB0CDD2467046900C73A1D /* babjip */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 79BB0CF22467046C00C73A1D /* Build configuration list for PBXNativeTarget "webview_Test" */;
+			buildConfigurationList = 79BB0CF22467046C00C73A1D /* Build configuration list for PBXNativeTarget "babjip" */;
 			buildPhases = (
 				79BB0CDA2467046900C73A1D /* Sources */,
 				79BB0CDB2467046900C73A1D /* Frameworks */,
@@ -94,9 +94,9 @@
 			);
 			dependencies = (
 			);
-			name = webview_Test;
+			name = babjip;
 			productName = webview_Test;
-			productReference = 79BB0CDE2467046900C73A1D /* webview_Test.app */;
+			productReference = 79BB0CDE2467046900C73A1D /* babjip.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -114,7 +114,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 79BB0CD92467046900C73A1D /* Build configuration list for PBXProject "webview_Test" */;
+			buildConfigurationList = 79BB0CD92467046900C73A1D /* Build configuration list for PBXProject "babjip" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -127,7 +127,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				79BB0CDD2467046900C73A1D /* webview_Test */,
+				79BB0CDD2467046900C73A1D /* babjip */,
 			);
 		};
 /* End PBXProject section */
@@ -298,12 +298,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H4ULGTPAH4;
-				INFOPLIST_FILE = webview_Test/Info.plist;
+				INFOPLIST_FILE = babjip/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Hyunjin.webview-Test";
+				PRODUCT_BUNDLE_IDENTIFIER = Hyunjin.babjip;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -316,12 +316,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H4ULGTPAH4;
-				INFOPLIST_FILE = webview_Test/Info.plist;
+				INFOPLIST_FILE = babjip/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Hyunjin.webview-Test";
+				PRODUCT_BUNDLE_IDENTIFIER = Hyunjin.babjip;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -331,7 +331,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		79BB0CD92467046900C73A1D /* Build configuration list for PBXProject "webview_Test" */ = {
+		79BB0CD92467046900C73A1D /* Build configuration list for PBXProject "babjip" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				79BB0CF02467046C00C73A1D /* Debug */,
@@ -340,7 +340,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		79BB0CF22467046C00C73A1D /* Build configuration list for PBXNativeTarget "webview_Test" */ = {
+		79BB0CF22467046C00C73A1D /* Build configuration list for PBXNativeTarget "babjip" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				79BB0CF32467046C00C73A1D /* Debug */,

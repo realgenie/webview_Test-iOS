@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:webview_Test.xcodeproj">
+      location = "self:/Users/hyunjinna/Desktop/Capstone/webview_Test_ios/babjip.xcodeproj">
    </FileRef>
 </Workspace>
