@@ -18,6 +18,7 @@
 	<string>1.0</string>
 	<key>CFBundleURLTypes</key>
 	<array>
+		<dict/>
 		<dict>
 			<key>CFBundleURLName</key>
 			<string>com.my.babjip</string>

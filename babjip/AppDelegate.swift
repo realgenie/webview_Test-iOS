@@ -11,8 +11,23 @@ import UIKit
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
+    var window: UIWindow?
+    let url = URL(string: "http://localhost:8080")
+    let url = URL(string: urlString)!
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+      
+        
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        let viewController = appDelegate.window?.rootViewController as! ViewController
+        
+        let urlComponents = URLComponents(url: url, resolvingAgainstBaseURL: false)
+        let items = urlComponents?.queryItems
+        
+        viewController.title = items?.first?.name
+        viewController.text.text = items?.first?.value
+
         return true
     }
 
@@ -36,4 +51,5 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
 }
+
 

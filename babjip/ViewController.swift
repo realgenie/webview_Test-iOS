@@ -17,9 +17,10 @@ class ViewController: UIViewController {
         let myRequest = URLRequest(url: myUrl!)
         myWebView.load(myRequest)
     }
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        loadWebPage("http://localhost:8080/")
+        loadWebPage("http://localhost:8080")
     }
    
     @IBAction func btnStop(_ sender: UIBarButtonItem) {
