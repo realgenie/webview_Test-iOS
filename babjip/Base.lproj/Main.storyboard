@@ -77,9 +77,6 @@
                                 <state key="normal">
                                     <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 </state>
-                                <connections>
-                                    <segue destination="Na1-GG-GoT" kind="custom" id="g36-mu-emW"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -152,67 +149,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="agu-YK-NJj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1160.8" y="-145.56650246305421"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="d0f-lz-Wc5">
-            <objects>
-                <viewController id="Na1-GG-GoT" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="p3i-3o-gaU">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ct8-1x-Rhw">
-                                <rect key="frame" x="0.0" y="734" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                <color key="backgroundColor" systemColor="systemGroupedBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <items>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="tco-tg-1ql"/>
-                                    <barButtonItem title="Item" systemItem="stop" id="atd-pT-KDM">
-                                        <connections>
-                                            <action selector="btnStop:" destination="BYZ-38-t0r" id="LW5-qF-kfu"/>
-                                        </connections>
-                                    </barButtonItem>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="TWo-Lk-2X1"/>
-                                    <barButtonItem title="Item" systemItem="refresh" id="QJu-k4-GYh">
-                                        <connections>
-                                            <action selector="btnReload:" destination="BYZ-38-t0r" id="CEo-v2-anb"/>
-                                        </connections>
-                                    </barButtonItem>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="Ioa-TY-1mI"/>
-                                    <barButtonItem title="Item" image="arrow.left" catalog="system" id="SDN-7x-QDc">
-                                        <connections>
-                                            <action selector="btnGoBack:" destination="BYZ-38-t0r" id="Rw5-WL-ldP"/>
-                                        </connections>
-                                    </barButtonItem>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="D6W-rn-irn"/>
-                                    <barButtonItem title="Item" image="arrow.right" catalog="system" id="N8E-oV-ERB">
-                                        <connections>
-                                            <action selector="btnGoForward:" destination="BYZ-38-t0r" id="JVw-bJ-WDT"/>
-                                        </connections>
-                                    </barButtonItem>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="kgA-n7-aQp"/>
-                                </items>
-                                <color key="tintColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </toolbar>
-                            <wkWebView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oB6-uy-ykd">
-                                <rect key="frame" x="-2" y="44" width="379" height="692"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <wkWebViewConfiguration key="configuration">
-                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
-                                    <wkPreferences key="preferences"/>
-                                </wkWebViewConfiguration>
-                            </wkWebView>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="NBk-7n-kD6"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="zDB-Ib-Jkf"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="YIV-hm-WTh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1161" y="527"/>
+            <point key="canvasLocation" x="1217" y="112"/>
         </scene>
     </scenes>
     <resources>
