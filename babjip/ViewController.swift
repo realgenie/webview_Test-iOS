@@ -23,8 +23,14 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let totalUrl = "http://localhost:8080/"
-        loadWebPage(totalUrl)
+        let URL1 = "http://localhost:8080/"
+        let URL2 = "foodlist/reserve?sto_no=1"
+        var totalURL = URL1
+        if !URL2.isEmpty {
+            var totalURL2 = URL1 + URL2
+            loadWebPage(totalURL2)
+        }
+        loadWebPage(totalURL)
     }
    
     @IBAction func btnStop(_ sender: UIBarButtonItem) {
