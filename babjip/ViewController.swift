@@ -11,16 +11,20 @@ import WebKit
 class ViewController: UIViewController {
 
     @IBOutlet var myWebView: WKWebView!
+    @IBOutlet var text:UITextField!
+    
     
     func loadWebPage(_ url: String) {
         let myUrl = URL(string: url)
         let myRequest = URLRequest(url: myUrl!)
         myWebView.load(myRequest)
+        
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        loadWebPage("http://localhost:8080")
+        let totalUrl = "http://localhost:8080/"
+        loadWebPage(totalUrl)
     }
    
     @IBAction func btnStop(_ sender: UIBarButtonItem) {
@@ -38,4 +42,6 @@ class ViewController: UIViewController {
     @IBAction func btnGoForward(_ sender: UIBarButtonItem) {
         myWebView.goForward()
     }
+    
+    
 }
