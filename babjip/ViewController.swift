@@ -11,7 +11,7 @@ import WebKit
 class ViewController: UIViewController {
 
     @IBOutlet var myWebView: WKWebView!
-    @IBOutlet var text:UITextField!
+    @IBOutlet var sto_no: String!
     
     
     func loadWebPage(_ url: String) {
@@ -19,19 +19,21 @@ class ViewController: UIViewController {
         let myRequest = URLRequest(url: myUrl!)
         myWebView.load(myRequest)
         
-    }
-
+    }    
     override func viewDidLoad() {
         super.viewDidLoad()
         let URL1 = "http://localhost:8080/"
-        let URL2 = "foodlist/reserve?sto_no=1"
-        var totalURL = URL1
-        if !URL2.isEmpty {
-            var totalURL2 = URL1 + URL2
-            loadWebPage(totalURL2)
+        let URL2 = "foodlist/reserve?sto_no="
+        let URL3 = sto_no
+        if let sto = URL3{
+            let total1URL = URL1 + URL2 + sto
+            loadWebPage(total1URL)
+        }else{
+            loadWebPage(URL1)
+            
         }
-        loadWebPage(totalURL)
     }
+    
    
     @IBAction func btnStop(_ sender: UIBarButtonItem) {
         myWebView.stopLoading()

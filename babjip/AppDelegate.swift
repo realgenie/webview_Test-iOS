@@ -25,7 +25,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let items = urlComponents?.queryItems
         
         viewController.title = items?.first?.name
-        viewController.text.text = items?.first?.value
+        viewController.sto_no = items?.first?.value
         
         return true
     }
