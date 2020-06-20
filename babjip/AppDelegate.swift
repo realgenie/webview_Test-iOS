@@ -11,29 +11,13 @@ import WebKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
-
-    
-    func webView(_ webView: WKWebView, decidePolicyFor navigationResponse: WKNavigationResponse, decisionHandler: @escaping (WKNavigationResponsePolicy) -> Void) {
-          if let urlResponse = navigationResponse.response as? HTTPURLResponse,
-              let url = urlResponse.url,
-              let allHeaderFields = urlResponse.allHeaderFields as? [String : String] {
-              let cookies = HTTPCookie.cookies(withResponseHeaderFields: allHeaderFields, for: url)
-              HTTPCookieStorage.shared.setCookies(cookies , for: urlResponse.url!, mainDocumentURL: nil)
-              decisionHandler(.allow)
-          }
-      }
-
-
-    func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
-        if let url = navigationAction.request.url, url.scheme != "http" && url.scheme != "https" {
-            //UIApplication.shared.openURL(url)
-            decisionHandler(.cancel)
-        } else {
-            decisionHandler(.allow)
+    func application(application: UIApplication, continueUserActivity userActivity: NSUserActivity, restorationHandler: ([AnyObject]?) -> Void) -> Bool {
+        if let webpageURL = userActivity.webpageURL, userActivity.activityType == NSUserActivityTypeBrowsingWeb {
+          
+            return true
         }
+        return false
     }
-
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
@@ -53,11 +37,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
-    
-    func application(_ application: UIApplication, open url: URL, sourceApplication: String?, annotation: Any) -> Bool {
-        print("url is \(url.absoluteString)")
-        return true
-    }
+
 
 }
 

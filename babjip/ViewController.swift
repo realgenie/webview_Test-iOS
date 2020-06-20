@@ -11,7 +11,6 @@ import WebKit
 class ViewController: UIViewController {
 
     @IBOutlet var myWebView: WKWebView!
-    
 
     func loadWebPage(_ url: String) {
         let myUrl = URL(string: url)
@@ -19,17 +18,12 @@ class ViewController: UIViewController {
         myWebView.load(myRequest)
         
     }
-
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         let URL = "http://localhost:8080/"
-
-        
         loadWebPage(URL)
-            
-        
     }
     
    
