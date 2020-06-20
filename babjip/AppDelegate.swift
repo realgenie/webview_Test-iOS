@@ -12,9 +12,29 @@ import WebKit
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-    //var window: UIWindow?
 
-  
+    
+    func webView(_ webView: WKWebView, decidePolicyFor navigationResponse: WKNavigationResponse, decisionHandler: @escaping (WKNavigationResponsePolicy) -> Void) {
+          if let urlResponse = navigationResponse.response as? HTTPURLResponse,
+              let url = urlResponse.url,
+              let allHeaderFields = urlResponse.allHeaderFields as? [String : String] {
+              let cookies = HTTPCookie.cookies(withResponseHeaderFields: allHeaderFields, for: url)
+              HTTPCookieStorage.shared.setCookies(cookies , for: urlResponse.url!, mainDocumentURL: nil)
+              decisionHandler(.allow)
+          }
+      }
+
+
+    func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
+        if let url = navigationAction.request.url, url.scheme != "http" && url.scheme != "https" {
+            //UIApplication.shared.openURL(url)
+            decisionHandler(.cancel)
+        } else {
+            decisionHandler(.allow)
+        }
+    }
+
+
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         return true

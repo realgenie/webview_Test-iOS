@@ -12,24 +12,22 @@ class ViewController: UIViewController {
 
     @IBOutlet var myWebView: WKWebView!
     
-    /*func loadWebPage(_ url: String) {
+
+    func loadWebPage(_ url: String) {
         let myUrl = URL(string: url)
         let myRequest = URLRequest(url: myUrl!)
         myWebView.load(myRequest)
         
-    }   */
+    }
 
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let urlString = "http://localhost:8080/"
-        if let url = URL(string: urlString) {
-            let urlReq = URLRequest(url: url)
-            myWebView.load(urlReq)
-        }
+        let URL = "http://localhost:8080/"
+
         
-        //loadWebPage(URL)
+        loadWebPage(URL)
             
         
     }
