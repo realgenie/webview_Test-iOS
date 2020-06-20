@@ -11,9 +11,19 @@ import WebKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
+    
+    var window: UIWindow?
+    
+    let navigator = WKNavigationResponse()
+    
     func application(application: UIApplication, continueUserActivity userActivity: NSUserActivity, restorationHandler: ([AnyObject]?) -> Void) -> Bool {
         if let webpageURL = userActivity.webpageURL, userActivity.activityType == NSUserActivityTypeBrowsingWeb {
           
+            guard let url = userActivity.webpageURL else {
+                return false
+            }
+            
+            
             return true
         }
         return false
