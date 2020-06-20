@@ -7,30 +7,14 @@
 //
 
 import UIKit
-import Foundation
+import WebKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-    var window: UIWindow?
+    //var window: UIWindow?
 
-    
   
-    func application(_ application: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey: Any] = [:]) -> Bool {
-        
-        let appDelegate = UIApplication.shared.delegate as! AppDelegate
-        let viewController = appDelegate.window?.rootViewController as! ViewController
-        
-        let urlComponents = URLComponents(url: url, resolvingAgainstBaseURL: false)
-        let items = urlComponents?.queryItems
-        
-        viewController.num = items?.first?.value
-        viewController.sto_no = items?.first?.name
-      
-        
-        return true
-    }
-    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         return true
