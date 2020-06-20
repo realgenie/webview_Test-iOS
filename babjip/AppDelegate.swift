@@ -24,8 +24,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let urlComponents = URLComponents(url: url, resolvingAgainstBaseURL: false)
         let items = urlComponents?.queryItems
         
-        viewController.sto_no = items?.first?.name
         viewController.num = items?.first?.value
+        viewController.sto_no = items?.first?.name
+      
         
         return true
     }

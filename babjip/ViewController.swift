@@ -11,8 +11,8 @@ import WebKit
 class ViewController: UIViewController {
 
     @IBOutlet var myWebView: WKWebView!
-    @IBOutlet var sto_no: String!
-    @IBOutlet var num: String!
+    @IBOutlet var sto_no: UIWebViewDelegate!
+    @IBOutlet var num: UIWebViewDelegate!
     
     
     func loadWebPage(_ url: String) {
@@ -26,10 +26,10 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         let URL1 = "http://localhost:8080/"
-        let URL2 = "foodlist/reserve?sto_no="
+        let URL2 = "foodlist/reserve"
         let URL3 = sto_no
-        if let sto = URL3{
-            let total1URL = URL1 + URL2 + sto
+        if let sto_no = URL3{
+            let total1URL = URL1 + URL2 + URL3
             loadWebPage(total1URL)
         }else{
             loadWebPage(URL1)
